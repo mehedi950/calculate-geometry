@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geometry Calculation</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- header part -->
+    <header></header>
+    <!-- main part -->
+    <main class="py-20">
+      <div class="flex">
+        <!-- left side  -->
+        <div
+          class="flex-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5"
+        >
+          <!-- card -1  -->
+
+          <div class="card bg-base-100 shadow-xl border-2">
+            <figure class="px-10 pt-10">
+              <img src="./images/triangle.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Triangle</h2>
+              <p>Area (A) = 0.5 x b x h</p>
+              <div class="flex">
+                <input
+                  class="bg-[#ddd] rounded-md mr-1 w-20 py-1 px-2"
+                  type="text"
+                  name=""
+                  value=""
+                  placeholder="b"
+                  id="triangleBase"
+                />
+                <span>cm</span
+                ><input
+                  class="bg-[#ddd] rounded-md mr-1 ml-2 w-20 py-1 px-2"
+                  type="text"
+                  name=""
+                  value=""
+                  placeholder="h"
+                  id="triangleHeight"
+                />
+                <span>cm</span>
+              </div>
+              <div>
+                <p>
+                  Area = <span id="triangleAreaShow">0</span> cm<sup>2</sup>
+                </p>
+              </div>
+              <div class="card-actions w-full">
+                <button
+                  onclick="calculateTriangle()"
+                  class="btn btn-primary w-full"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card -2  -->
+
+          <div class="card bg-base-100 shadow-xl border-2">
+            <figure class="px-10 pt-10">
+              <img src="./images/triangle.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Triangle</h2>
+              <p>Area (A) = 0.5 x b x h</p>
+              <div class="flex">
+                <input
+                  class="bg-[#ddd] rounded-md mr-1 w-20 py-1 px-2"
+                  type="text"
+                  name=""
+                  value=""
+                  placeholder="b"
+                />
+                <span>cm</span
+                ><input
+                  class="bg-[#ddd] rounded-md mr-1 ml-2 w-20 py-1 px-2"
+                  type="text"
+                  name=""
+                  value=""
+                  placeholder="h"
+                />
+                <span>cm</span>
+              </div>
+              <div>
+                <p>Area = <span>0</span> cm<sup>2</sup></p>
+              </div>
+              <div class="card-actions w-full">
+                <button class="btn btn-primary w-full">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- card -3  -->
+
+          <div class="card bg-base-100 shadow-xl border-2">
+            <figure class="px-10 pt-10">
+              <img src="./images/triangle.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Triangle</h2>
+              <p>Area (A) = 0.5 x b x h</p>
+              <div class="flex">
+                <input
+                  class="bg-[#ddd] rounded-md mr-1 w-20 py-1 px-2"
+                  type="text"
+                  name=""
+                  value=""
+                  placeholder="b"
+                />
+                <span>cm</span
+                ><input
+                  class="bg-[#ddd] rounded-md mr-1 ml-2 w-20 py-1 px-2"
+                  type="text"
+                  name=""
+                  value=""
+                  placeholder="h"
+                />
+                <span>cm</span>
+              </div>
+              <div>
+                <p>Area = <span>0</span> cm<sup>2</sup></p>
+              </div>
+              <div class="card-actions w-full">
+                <button class="btn btn-primary w-full">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- card -1  -->
+
+          <div class="card bg-base-100 shadow-xl border-2">
+            <figure class="px-10 pt-10">
+              <img src="./images/triangle.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Triangle</h2>
+              <p>Area (A) = 0.5 x b x h</p>
+              <div class="flex">
+                <input
+                  class="bg-[#ddd] rounded-md mr-1 w-20 py-1 px-2"
+                  type="text"
+                  name=""
+                  value=""
+                  placeholder="b"
+                />
+                <span>cm</span
+                ><input
+                  class="bg-[#ddd] rounded-md mr-1 ml-2 w-20 py-1 px-2"
+                  type="text"
+                  name=""
+                  value=""
+                  placeholder="h"
+                />
+                <span>cm</span>
+              </div>
+              <div>
+                <p>Area = <span>0</span> cm<sup>2</sup></p>
+              </div>
+              <div class="card-actions w-full">
+                <button class="btn btn-primary w-full">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- card -1  -->
+
+          <div class="card bg-base-100 shadow-xl border-2">
+            <figure class="px-10 pt-10">
+              <img src="./images/triangle.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Triangle</h2>
+              <p>Area (A) = 0.5 x b x h</p>
+              <div class="flex">
+                <input
+                  class="bg-[#ddd] rounded-md mr-1 w-20 py-1 px-2"
+                  type="text"
+                  name=""
+                  value=""
+                  placeholder="b"
+                />
+                <span>cm</span
+                ><input
+                  class="bg-[#ddd] rounded-md mr-1 ml-2 w-20 py-1 px-2"
+                  type="text"
+                  name=""
+                  value=""
+                  placeholder="h"
+                />
+                <span>cm</span>
+              </div>
+              <div>
+                <p>Area = <span>0</span> cm<sup>2</sup></p>
+              </div>
+              <div class="card-actions w-full">
+                <button class="btn btn-primary w-full">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- card -1  -->
+
+          <div class="card bg-base-100 shadow-xl border-2">
+            <figure class="px-10 pt-10">
+              <img src="./images/triangle.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Triangle</h2>
+              <p>Area (A) = 0.5 x b x h</p>
+              <div class="flex">
+                <input
+                  class="bg-[#ddd] rounded-md mr-1 w-20 py-1 px-2"
+                  type="text"
+                  name=""
+                  value=""
+                  placeholder="b"
+                />
+                <span>cm</span
+                ><input
+                  class="bg-[#ddd] rounded-md mr-1 ml-2 w-20 py-1 px-2"
+                  type="text"
+                  name=""
+                  value=""
+                  placeholder="h"
+                />
+                <span>cm</span>
+              </div>
+              <div>
+                <p>Area = <span>0</span> cm<sup>2</sup></p>
+              </div>
+              <div class="card-actions w-full">
+                <button class="btn btn-primary w-full">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- right side  -->
+        <div
+          class="bg-zinc-700 hidden md:block rounded-lg w-auto sm:w-40 md:w-72 xl:w-96"
+        >
+          <h2
+            class="text-center text-xl text-white font-bold py-6 border-b-2 mx-5"
+          >
+            Area Calculation
+          </h2>
+        </div>
+      </div>
+    </main>
+    <!-- footer part -->
+    <footer></footer>
+    <!-- js linkup  -->
+    <script src="./triangle.js"></script>
+  </body>
+</html>
