@@ -11,7 +11,7 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
+  <body onload="initialStatement()">
     <!-- header part -->
     <header></header>
     <!-- main part -->
@@ -63,6 +63,7 @@
                   Buy Now
                 </button>
               </div>
+              <span id="triangleError"></span>
             </div>
           </div>
           <!-- card -2  -->
@@ -256,6 +257,7 @@
     <!-- footer part -->
     <footer></footer>
     <!-- js linkup  -->
+    <script src="./initialStatement.js"></script>
     <script src="./triangle.js"></script>
   </body>
 </html>
